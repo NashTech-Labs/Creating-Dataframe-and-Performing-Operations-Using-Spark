@@ -1,0 +1,1 @@
+[[{"${BASE}/src/main/resources/spark.conf":["${BASE}/target/scala-2.12/classes/spark.conf"]},{"${BASE}/target/scala-2.12/classes/spark.conf":["${BASE}/src/main/resources/spark.conf"]}],{"${BASE}/src/main/resources/spark.conf":{"file":"file:///home/knoldus/Scala_Programs/Spark_Practice/M&M/src/main/resources/spark.conf","lastModified":1641371204818}}]

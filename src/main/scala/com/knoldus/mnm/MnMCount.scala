@@ -26,7 +26,7 @@ object MnMCount extends Serializable {
     val mnmDF = loadMnMDataset(spark, args(0))
     mnmDF.show(5, truncate = false)
     val countMnMDF = aggregateCountOfAllColours(mnmDF)
-    countMnMDF.show(60)
+    countMnMDF.show
     logger.info(s"Total Rows == ${countMnMDF.count()}")
 
     logger.info("Preferred M&M in CA")
