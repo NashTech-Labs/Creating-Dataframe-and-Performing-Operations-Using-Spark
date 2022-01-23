@@ -32,12 +32,12 @@ class MnMCountTest extends FunSuite with BeforeAndAfterAll{
     val colorMap = new mutable.HashMap[String, Long]
     aggregateColorCountForCA.collect().foreach(r => colorMap.put(r.getString(1), r.getLong(2)))
 
-    assert(colorMap("Yellow") == 1807, "Count for TX of yellow color mnm should be 1807")
-    assert(colorMap("Green") == 1723, "Count for TX of green color mnm should be 1723")
-    assert(colorMap("Brown") == 1718, "Count for TX of brown color mnm should be 1718")
-    assert(colorMap("Orange") == 1657, "Count for TX of orange color mnm should be 1657")
-    assert(colorMap("Red") == 1656, "Count for TX of red color mnm should be 1656")
-    assert(colorMap("Blue") == 1603, "Count for TX of blue color mnm should be 1603")
+    assert(colorMap("Yellow") == 1807, "Count for CA of yellow color mnm should be 1807")
+    assert(colorMap("Green") == 1723, "Count for CA of green color mnm should be 1723")
+    assert(colorMap("Brown") == 1718, "Count for CA of brown color mnm should be 1718")
+    assert(colorMap("Orange") == 1657, "Count for CA of orange color mnm should be 1657")
+    assert(colorMap("Red") == 1656, "Count for CA of red color mnm should be 1656")
+    assert(colorMap("Blue") == 1603, "Count for CA of blue color mnm should be 1603")
 
   }
 
